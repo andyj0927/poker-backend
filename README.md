@@ -1,13 +1,13 @@
-# 몰입 오목 (BackEnd)
+# Poker (BackEnd)
 
-### 2022 여름 몰입캠프 공통과제 2주차
+### 2022 여름 몰입캠프 3주차
 
 ---
 
 # Authors
 
 - KAIST 이준영 [leejy12]("https://github.com/leejy12")
-- GIST 현재오 [hjo3736]("https://github.com/hjo3736")
+- KAIST 정영훈 [andyj0927]("https://github.com/andyj0927")
 
 ---
 
@@ -25,7 +25,7 @@
         <tr>
             <td rowspan=3>Server</td>
             <td>Node</td>
-            <td><code>v16.15.1</code></td>
+            <td><code>v16.16.0</code></td>
         </tr>
         <tr>
             <td>npm</td>
@@ -73,7 +73,7 @@ npm run dev
 
 ## API
 
-Routing was done using [Express.js]("https://expressjs.com/"). See [API.md](https://github.com/leejy12/madcamp-week2-backend/blob/master/API.md) for details.
+Routing was done using [Express.js]("https://expressjs.com/"). See [API.md](https://github.com/leejy12/poker-backend/blob/master/API.md) for details.
 
 ---
 
@@ -86,14 +86,13 @@ Table `users`.
 | Field      | Type         | Null | Key | Default | Extra          |
 +------------+--------------+------+-----+---------+----------------+
 | id         | int(11)      | NO   | PRI | NULL    | auto_increment |
-| email      | varchar(100) | NO   |     | NULL    |                |
-| nickname   | varchar(30)  | NO   |     | NULL    |                |
-| school     | varchar(30)  | NO   |     | NULL    |                |
-| elo_rating | int(11)      | NO   |     | NULL    |                |
+| name       | varchar(20)  | NO   |     | NULL    |                |
+| password   | varchar(60)  | NO   |     | NULL    |                |
+| chip_count | int(11)      | NO   |     | NULL    |                |
 +------------+--------------+------+-----+---------+----------------+
 ```
 
-Each row's `email` and `nickname` are unique.
+Each row's `id` and `name` are unique.
 
 ---
 
